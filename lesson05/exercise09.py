@@ -1,7 +1,7 @@
 hidden = 43
 
 cnt = 0
-max_guesses = 10
+max_guesses = 10 + 1
 guess = int(input("Give a number: "))
 
 while True:

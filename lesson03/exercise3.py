@@ -1,5 +1,5 @@
-x = input("Give x: ")
-y = input("Give y: ")
+x = int(input("Give x: "))
+y = int(input("Give y: "))
 
 if x == y:
     print(str(x) + "==" + str(y))
@@ -10,11 +10,12 @@ if x != y:
 if x < y:
     print(str(x) + "<" + str(y))
 
-if x > y:
-    print(str(x) + ">" + str(y))
-
 if x <= y:
     print(str(x) + "<=" + str(y))
 
+if x > y:
+    print(str(x) + ">" + str(y))
+
 if x >= y:
     print(str(x) + ">=" + str(y))
+

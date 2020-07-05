@@ -7,7 +7,7 @@ from datetime import datetime  # all 3 at the beginning
 kind = {"heart", "diamond", "spade", "club"}
 number = {"ace", 2, 3, 4, 5, 6, 7, 8, 9, 10,"jack", "queen", "king"}
 
-deck = {(k,n) for k in kind for n in number}
+deck = set()
 
 
 # functions
@@ -66,6 +66,7 @@ def computer(value_player, hand):
 # main
 
 def main():
+    global deck
     seed(datetime.now())  # once, before randint call
     rounds = 1
     score = [0, 0]
@@ -74,6 +75,8 @@ def main():
         print("=" * 15)
         print("Round " + str(rounds))
         print("=" * 15)
+
+        deck = {(k, n) for k in kind for n in number}
 
         player_hand = set()
         player_value = player(player_hand)
@@ -108,7 +111,7 @@ def main():
             print("Bye bye!!")
             break
 
-
+        rounds += 1
 
 
 main()

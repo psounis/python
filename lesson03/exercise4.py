@@ -1,5 +1,5 @@
-x = input("Dwse x: ")
-y = input("Dwse y: ")
+x = int(input("Dwse x: "))
+y = int(input("Dwse y: "))
 
 if x >= y:
     print(x)

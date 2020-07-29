@@ -14,6 +14,7 @@ class Building:
         for i in range(len(self.storeys)):
             print(f"Storey {i}: {self.storeys[i].people} people")
 
+
 b = Building(3)
 b.add_people(0,2)
 b.print_people()

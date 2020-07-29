@@ -19,7 +19,7 @@ def f(x):
     return x**2
 
 
-points = [Point(i,f(i)) for i in range(1,11)]
+points = [Point(i,f(i)) for i in range(1, 10)]
 
 
 for point in points:

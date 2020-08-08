@@ -5,18 +5,18 @@ class Animal:
 
 class Cat(Animal):
     def make_sound(self):
-        print("Meow!")
+        print("Meow")
 
 
 class HimalayanCat(Cat):
     def make_sound(self):
         super().make_sound()
-        print("Miouw Miouw!")
+        print("Miouw Miouw")
 
 
 class Dog(Animal):
     def make_sound(self):
-        print("Woof woof!")
+        print("Woof woof")
 
 
 class Doberman(Dog):
@@ -26,12 +26,12 @@ class Doberman(Dog):
 class KingDoberman(Doberman):
     def make_sound(self):
         super().make_sound()
-        print("WOOAAFFFFF")
+        print("WOOAAAAAAAFFF")
 
 
 Animal().make_sound()
 Cat().make_sound()
 HimalayanCat().make_sound()
 Dog().make_sound()
-Doberman.make_sound()
-KingDoberman.make_sound()
+Doberman().make_sound()
+KingDoberman().make_sound()

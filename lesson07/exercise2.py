@@ -4,7 +4,9 @@ from datetime import datetime  # all 3 at the beginning
 
 seed(datetime.now())  # once, before randint call
 
-for _ in range(10):
+i = 0
+columns = []
+while True:
     column = set()
 
     # 10-19
@@ -29,15 +31,22 @@ for _ in range(10):
             column.add(rand_number)
             break
 
-    # 1 - 9
+    # 1-9 EVEN
 
-    rand_number = randrange(1,10)
+    rand_number = 2 * randrange(1,5)
     column.add(rand_number)
 
+    # 41-49 ODD
 
-    # 40 - 49
-
-    rand_number = randrange(40,50)
+    rand_number = randrange(41,49+1,2)
     column.add(rand_number)
 
+    if column not in columns:
+        columns.append(column)
+        i += 1
+        if i==10:
+            break
+
+
+for column in columns:
     print(column)

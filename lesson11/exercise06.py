@@ -1,16 +1,15 @@
 PI = 3.14159265359
 
-
 def triangle_area(base, height):
-    return (base * height)/2
+    return base*height/2
 
 
 def square_perimeter(edge):
-    return 4*a
+    return 4*edge
 
 
 def square_area(edge):
-    return a ** 2
+    return edge ** 2
 
 
 def circle_perimeter(radius):
@@ -18,7 +17,7 @@ def circle_perimeter(radius):
 
 
 def circle_area(radius):
-    return PI*(radius ** 2)
+    return PI * radius ** 2
 
 
-print(circle_area(3))
+print(circle_area(1))

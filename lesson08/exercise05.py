@@ -7,6 +7,6 @@ merchandise = {
 
 rate = 2.2
 
-new_values = { key: value*rate for key, value in merchandise.items()}
+new_values = { key: value*(1+rate) for key, value in merchandise.items()}
 
 print(new_values)

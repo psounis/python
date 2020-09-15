@@ -44,8 +44,8 @@ class Time:
         if isinstance(other, Time):
             carry = (self.second + other.second) // 60
             new_second = (self.second + other.second) % 60
-            carry = (self.minute + other.minute + carry) // 60
             new_minute = (self.minute + other.minute + carry) % 60
+            carry = (self.minute + other.minute + carry) // 60
             new_hour = (self.hour + other.hour + carry) % 24
             return Time(new_hour, new_minute, new_second)
         elif isinstance(other, int):

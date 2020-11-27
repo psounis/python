@@ -24,6 +24,7 @@ class Cycle(GeometricObjectInterface):
 
 
 class Resizable(ABC):
+    @abstractmethod
     def resize(self, param):
         pass
 

@@ -1,3 +1,4 @@
 name = "Alan"
 surname = "Turing"
-print(name + " " + surname)
+fulname = name + " " + surname
+print(full_name)

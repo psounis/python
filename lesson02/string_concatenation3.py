@@ -1,4 +1,4 @@
 name = "Alan"
 surname = "Turing"
-fulname = name + " " + surname
+full_name = name + " " + surname
 print(full_name)

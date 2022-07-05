@@ -1,3 +1,4 @@
+# mutable.arguments.assignment.py
 def f(arg):
     print(arg)
     arg = [3]

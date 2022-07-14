@@ -1,4 +1,4 @@
-# public.py
+# private.py
 class Cow:
     def __init__(self, weight, hunger):
         self.weight = weight

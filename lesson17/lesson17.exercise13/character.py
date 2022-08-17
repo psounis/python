@@ -1,4 +1,3 @@
-from equipment import Equipment
 from random import randrange
 
 

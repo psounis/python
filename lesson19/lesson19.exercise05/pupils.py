@@ -113,7 +113,7 @@ class Pupils:
                 print("Pupil deleted!")
                 return
         else:
-            print("No teacher with this id!")
+            print("No pupil with this id!")
 
     def print_pupils_names(self):
         for pupil in self.pupils:
